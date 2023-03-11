@@ -1,0 +1,89 @@
+/* 노멀라이징 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family:'GmarketSansMedium';
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+ul, ol, li{
+    list-style:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+
+.wrap{
+    width:100%;
+    height:auto;
+    display:flex;
+}
+.side-bar{
+    width:200px;
+    height:auto;
+    padding-top:20px;
+    padding-left:20px;
+    box-sizing:border-box;
+    
+    background-color:#f8ca00;
+}
+
+.side-bar>.portfolio{
+    margin-top:10px;
+    font-size:1.5rem;
+    font-weight:bold;   
+}
+.side-bar>li>a{
+    font-size:1.5rem;
+    font-weight:bold;
+
+}
+.side-bar>li>ul{
+    box-sizing:border-box;
+
+}
+.side-bar>li>ul>li>a{
+    font-size:1.2rem;
+    font-weight:normal;
+}
+.content{
+    width:calc(100% - 200px);
+}
+.content>img {
+    width:100%;
+}
+.content_intro{
+    box-sizing:border-box;
+    padding:20px;
+}
+.content_intro > .intro{
+    width:100%;
+    margin-bottom:30px;
+}
+.content_intro>.intro>.title{
+    margin-bottom:10px;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding-left:4px;
+}
+.content_intro>.intro>.text{
+    line-height:1.4;
+    text-indent:4px;
+}
+.content_portfolio>iframe{
+    width:99%;
+    height:90vh;
+}
+.content_portfolio>video{
+    width:99%;
+}
