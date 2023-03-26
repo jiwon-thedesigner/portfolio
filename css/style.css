@@ -19,7 +19,7 @@ ul, ol, li{
     list-style:none;
 }
 a:hover{
-    text-decoration:underline;
+    color:rgb(247, 110, 60);
 }
 
 
@@ -27,15 +27,40 @@ a:hover{
     width:100%;
     height:auto;
     display:flex;
+    position:relative;
 }
-.side-bar{
-    width:200px;
-    height:auto;
+.side-bar-open{
     padding-top:20px;
     padding-left:20px;
+    cursor:pointer;
+    position:absolute;
+    z-index:111;
+}
+.side-bar-open:hover{
+    color:rgb(247, 110, 60);
+}
+.side-bar{
+    position:absolute;
+    width:0;
+    height:100%;
+    padding-top:20px;
+    padding-left:0;
+    transition:0.5s;
     box-sizing:border-box;
-    
     background-color:#f8ca00;
+    overflow:hidden;
+    z-index:999;
+}
+.side-bar.active{
+    width:200px;
+    padding-left:20px;
+}
+.side-bar .side-bar-close{
+    margin-bottom:16px;
+    cursor:pointer;
+}
+.side-bar .side-bar-close:hover{
+    color:rgb(247, 110, 60);
 }
 
 .side-bar>.portfolio{
@@ -57,7 +82,8 @@ a:hover{
     font-weight:normal;
 }
 .content{
-    width:calc(100% - 200px);
+    margin-top:40px;
+    width:100%;
 }
 .content>img {
     width:100%;
@@ -87,3 +113,52 @@ a:hover{
 .content_portfolio>video{
     width:99%;
 }
+.content_portfolio.three-d>.project-list{
+    width: 100%;
+    height:100vh;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+/* portfolio_3d start */
+
+.content_portfolio.three-d .project{
+    width:100%;
+    margin-bottom:16px;
+    padding-bottom:8px;
+    border-bottom:1px solid black;
+}
+.content_portfolio.three-d .project:last-child{
+    border:0;
+}
+.content_portfolio.three-d .project__title{
+    font-weight:bold;
+    font-size:1.0rem;
+}
+.content_portfolio.three-d .project__description{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+}
+.content_portfolio.three-d .project__image-box{
+    width: 40%;
+    padding-bottom:calc(40% *(9/16));
+    position:relative;
+    overflow:hidden;
+}
+.content_portfolio.three-d .project__image{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.content_portfolio.three-d .project__text-box{
+    width: 55%;
+}
+.content_portfolio.three-d .project__text{
+    margin-bottom:8px;
+}
+
+/* portfolio_3d end */
+
+

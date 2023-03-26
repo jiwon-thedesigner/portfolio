@@ -11,7 +11,9 @@
 
 <body>
     <div class="wrap">
+        <div class="side-bar-open">menu</div>
         <ul class="side-bar">
+            <div class="side-bar-close">close</div>
             <li><a href="./index.html">경력기술서</a></li>
             <li><a href="./introduction.html">자기소개서</a></li>
             <li class="portfolio">포트폴리오
@@ -21,10 +23,64 @@
                 </ul>
             </li>
         </ul>
-        <div class="content content_portfolio">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cfjHBzZ8RZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="content content_portfolio three-d">
+            <ul class="project-list">
+                <li class="project project--fender">
+                    <p class="project__title">Fender</p>
+                    <div class="project__description">
+                        <div class="project__image-box">
+                            <img class="project__image" src="./image/3d-portfolio_fender_jiwonkim.png" alt="fender">
+                        </div>
+                        <div class="project__text-box">
+                            <div class="project__text text--type">
+                                <span>&#45; type : video</span>
+                            </div>
+                            <div class="project__text text--concept">
+                                <span>&#45; concept : 구체화된 세련되고 펑키한 텔레캐스터의 색깔에서 벗어나 락의 거장 롤링스톤즈와 레드제플린의 시그니처기타를 소개함으로 이색적인 모습을 보여주었습니다.</span>
+                            </div>
+                            <a href="https://www.behance.net/gallery/166766305/Fender-Teleaster-3D-Motion-Graphic" target="_blank" class="project__text text--outerlink">Watch on Behance</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project project--instax">
+                    <p class="project__title">Instax</p>
+                    <div class="project__description">
+                        <div class="project__image-box">
+                            <img class="project__image" src="./image/3d-portfolio_instax_jiwonkim.jpg" alt="instax">
+                        </div>
+                        <div class="project__text-box">
+                            <div class="project__text text--type">
+                                <span>&#45; type : image</span>
+                            </div>
+                            <div class="project__text text--concept">
+                                <span>&#45; concept : 빈티지한 디자인의 인스탁스 미니 40을 기하학적인 오브제를 이용하여 귀엽고 사랑스러운 느낌을 연출해 보았습니다. </span>
+                            </div>
+                            <a href="https://www.behance.net/gallery/166880271/Instax-mini-40" target="_blank" class="project__text text--outerlink">Watch on Behance</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="project project--kirby">
+                    <p class="project__title">Kirby</p>
+                    <div class="project__description">
+                        <div class="project__image-box">
+                            <img class="project__image" src="" alt="kirby">
+                        </div>
+                        <div class="project__text-box">
+                            <div class="project__text text--type">
+                                <span>&#45; type : image</span>
+                            </div>
+                            <div class="project__text text--concept">
+                                <span>&#45; concept : </span>
+                            </div>
+                            <a href="" target="_blank" class="project__text text--outerlink">Watch on Behance</a>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
